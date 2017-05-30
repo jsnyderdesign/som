@@ -33,7 +33,7 @@
   <div class="container">
 
     <div class="row header">
-        <h4>&#35;Sandwiches on Mountains</h4>
+        <a href="/" class="logo"><img src="images/logo.svg" /></a>
         <p>We don't come to your work and take the salami out of your buns.
         <br />
         <span class="warning"><b>Note:</b> Hotdogs are <b>not sandwiches</b>, please do not eat them on mountains and please <b>do not</b> abuse this hashtag and post pictures of them.</span>
@@ -73,6 +73,20 @@
       ?>
       </ul>
   </div><!-- container -->
+
+  <div class="about">
+    <div class="container">
+
+      <div class="founder founder-image">
+      </div><!-- founder -->
+
+      <div class="about-text">
+        <h4>Born in a bowl of brownie mix</h4>
+        <p>Our esteemed founder started Sandwiches on Mountains with one goal: to raise awareness of sandwiches on mountains. To date our foundation has raised A LOT of awareness about sandwiches on mountains. Possibly even a ton of awareness.</p>
+      </div>
+    </div><!-- container -->
+  </div><!-- .about -->
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

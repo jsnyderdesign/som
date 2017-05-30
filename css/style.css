@@ -866,6 +866,10 @@ p {
 .warning {
   font-size: 10px; }
 
+.logo img {
+  width: 200px;
+  height: auto; }
+
 .header {
   margin: 50px 0 15px 0; }
 
@@ -876,5 +880,32 @@ p {
     .som-images li img {
       width: 188px;
       height: auto; }
+
+.about {
+  background: url("../images/SpoonGraphics-Topographic-Map-5.png");
+  background-repeat: repeat;
+  position: relative;
+  margin: 50px 0 0 0; }
+  .about .container {
+    height: 100%;
+    padding: 30px 0; }
+  .about .founder {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .about .founder-image {
+    background-image: url("../images/founder.jpg"); }
+  .about .about-text {
+    display: inline-block;
+    width: 66%;
+    vertical-align: top;
+    margin: 30px 0 0 50px; }
+  .about img {
+    position: absolute;
+    bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
