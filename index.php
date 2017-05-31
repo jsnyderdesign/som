@@ -50,7 +50,7 @@
         	$insta_array = json_decode($insta_json[0], TRUE);
         	return $insta_array; // this return a lot things print it and see what else you need
         }
-        $tag = 'hiking'; // tag for which ou want images
+        $tag = 'sandwichesonmountains'; // tag for which ou want images
         $results_array = scrape_insta_hash($tag);
         $limit = 15; // provide the limit thats important because one page only give some images then load more have to be clicked
         $image_array= array(); // array to store images.
