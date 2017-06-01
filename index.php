@@ -41,7 +41,7 @@
     <div class="row header">
         <div class="container">
           <a href="/" class="logo"><img src="images/logo.svg" /></a>
-            <p>Sandwichs on Mountains is all about getting sandwiches into your hands and getting you out onto the world's mountains. What can be better than exercise, good food and great views? The history of sandwiches and humans goes back a long ways with some scientists theorizing that humans actually evolved thumbs purely to help eat sandwiches. This site exists to document our collective love of sandwiches and inspire others to join the cause.
+            <p>Sandwiches on Mountains is all about getting sandwiches into your hands and getting you out onto the world's mountains. What can be better than exercise, good food and great views? The history of sandwiches and humans goes back a long ways with some scientists theorizing that humans actually evolved thumbs purely to help eat sandwiches. This site exists to document our collective love of sandwiches and inspire others to join the cause.
             <br />
             <span class="warning"><b>Note:</b> Hotdogs are <b>not sandwiches</b>, please do not eat them on mountains and please <b>do not</b> abuse this hashtag and post pictures of them.</span>
             </p>
@@ -93,11 +93,74 @@
       Hover over the map below to see each state's high point, and which states we've already completed!
       </p>
       <div id="world-map"></div>
+      <!--
       <script>
         $(function(){
-          $('#world-map').vectorMap({map: 'us_aea'});
+            new jvm.Map({
+              container: $('#world-map'),
+              map: 'us_aea',
+              series: {
+                regions: [{
+                  scale: {
+                    orange: '#b34b1a' /* Filled color for map */
+                  },
+                  attribute: 'fill',
+                  values: {
+                    "US-MA": 'orange',
+                    "US-WA": 'orange',
+                    "US-OH": 'orange',
+                    "US-OR": 'orange'
+                  }
+                }]
+              },
+              onRegionTipShow: function(event, label){
+                label.html (
+                  '<b>'+label.html()+'</b><br />'+
+                  '<b>State High Point: </b> 1500ft'
+                );
+              }
+
+          });
         });
       </script>
+    -->
+
+    <script>
+
+      $(function(){
+        var highpointData = {
+            "US-AK": 20310,
+            "WA": 14411,
+            "OH": 1549,
+            "MA": 3487,
+            "OR": 11239,
+          };
+          new jvm.Map({
+            container: $('#world-map'),
+            map: 'us_aea',
+            series: {
+              regions: [{
+                scale: {
+                  orange: '#b34b1a' /* Filled color for map */
+                },
+                attribute: 'fill',
+                values: {
+                  "US-MA": 'orange',
+                  "US-WA": 'orange',
+                  "US-OH": 'orange',
+                  "US-OR": 'orange'
+                }
+              }]
+            },
+            onRegionTipShow: function(event, label, code){
+              label.html (
+                '<b>'+label.html()+'</b><br />'+
+                '<b>State High Point: </b>'
+              );
+            }
+        });
+      });
+    </script>
 
   </div><!-- .container -->
   </div><!-- .fifty-states -->
