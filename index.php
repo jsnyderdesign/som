@@ -25,22 +25,29 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- Map JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
 
     <div class="row header">
-        <a href="/" class="logo"><img src="images/logo.svg" /></a>
-        <p>We don't come to your work and take the salami out of your buns.
-        <br />
-        <span class="warning"><b>Note:</b> Hotdogs are <b>not sandwiches</b>, please do not eat them on mountains and please <b>do not</b> abuse this hashtag and post pictures of them.</span>
-        </p>
-
+        <div class="container">
+          <a href="/" class="logo"><img src="images/logo.svg" /></a>
+            <p>Sandwichs on Mountains is all about getting sandwiches into your hands and getting you out onto the world's mountains. What can be better than exercise, good food and great views? The history of sandwiches and humans goes back a long ways with some scientists theorizing that humans actually evolved thumbs purely to help eat sandwiches. This site exists to document our collective love of sandwiches and inspire others to join the cause.
+            <br />
+            <span class="warning"><b>Note:</b> Hotdogs are <b>not sandwiches</b>, please do not eat them on mountains and please <b>do not</b> abuse this hashtag and post pictures of them.</span>
+            </p>
+        </div><!-- .container -->
     </div>
 
+
+    <div class="container photo-feed">
+        <h5>Sandwiches in the Wild</h5>
+        <p>Below are Instagram images of sandwiches on mountains, hashtagged by our community members. Remember to hashtag your sandwich photos as <b>&#35;sandwichesonmountains</b> to be included on this list.</p>
       <ul class="som-images">
       <?php
         function scrape_insta_hash($tag) {
@@ -50,7 +57,7 @@
         	$insta_array = json_decode($insta_json[0], TRUE);
         	return $insta_array; // this return a lot things print it and see what else you need
         }
-        $tag = 'sandwichesonmountains'; // tag for which ou want images
+        $tag = 'hiking'; // tag for which ou want images
         $results_array = scrape_insta_hash($tag);
         $limit = 15; // provide the limit thats important because one page only give some images then load more have to be clicked
         $image_array= array(); // array to store images.
@@ -86,6 +93,17 @@
       </div>
     </div><!-- container -->
   </div><!-- .about -->
+
+  <div class="fifty-states">
+    <div class="container">
+
+
+  </div><!-- .container -->
+  </div><!-- .fifty-states -->
+
+
+
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -2,7 +2,7 @@
 @import "skeleton";
 
 
-
+/**** OVERALL STYLING ****/
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Baloo Bhaina', cursive;
   font-weight: regular;
@@ -10,20 +10,40 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: 'Roboto Slab', serif;
+  font-size: 1.15em;
 }
 .warning {
   font-size: 10px;
 }
 
-.logo img {
-  width: 200px;
-  height: auto;
-}
-
+/**** HEADER STYLING ****/
 .header {
-  margin: 50px 0 15px 0;
+  margin: 0 0 50px 0;
+  padding: 15px 0 45px 0;
+  background: #c2d4d4 url("../images/SpoonGraphics-Topographic-Map-5.jpg");
+  p {
+    text-align: center;
+    margin: 35px 0 0 0;
+  }
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  img {
+   width: 200px;
+   height: auto;
+   margin: 0 auto;
+   display: block;
+ }
 }
 
+/**** PHOTO FEED STYLING ****/
+.photo-feed {
+  h5, p {
+    text-align: center;
+  }
+}
 .som-images {
   list-style: none;
 
@@ -37,8 +57,9 @@ p {
   }
 }
 
+/**** ABOUT SECTION STYLING ****/
 .about {
-  background: url("../images/SpoonGraphics-Topographic-Map-5.png");
+  background: #c2d4d4 url("../images/SpoonGraphics-Topographic-Map-5.jpg");
   background-repeat: repeat;
   position: relative;
   margin: 50px 0 0 0;
@@ -56,6 +77,7 @@ p {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    margin: 20px 0 0 0;
   }
   .founder-image {
     background-image: url("../images/founder.jpg");
@@ -74,3 +96,5 @@ p {
   }
 
 }
+
+/**** FIFTY STATES MAP ****/
