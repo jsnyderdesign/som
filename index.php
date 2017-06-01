@@ -19,7 +19,8 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/style.css"
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -27,6 +28,9 @@
 
   <!-- Map JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="js/jquery-jvectormap-us-aea.js"></script>
 
 </head>
 <body>
@@ -81,6 +85,24 @@
       </ul>
   </div><!-- container -->
 
+  <div class="fifty-states">
+    <div class="container">
+      <h4>50 Sandwiches in 50 States Project</h4>
+      <p>The goal of the 50 Sandwiches in 50 States project is to eat a sandwich at the high point of all 50 states.
+      <br />
+      Hover over the map below to see each state's high point, and which states we've already completed!
+      </p>
+      <div id="world-map"></div>
+      <script>
+        $(function(){
+          $('#world-map').vectorMap({map: 'us_aea'});
+        });
+      </script>
+
+  </div><!-- .container -->
+  </div><!-- .fifty-states -->
+
+
   <div class="about">
     <div class="container">
 
@@ -94,13 +116,15 @@
     </div><!-- container -->
   </div><!-- .about -->
 
-  <div class="fifty-states">
-    <div class="container">
 
 
+
+
+<footer>
+  <div class="container">
+    <p>&copy; Copyright <?php echo date("Y"); ?> | Sandwiches on Mountains</p>
   </div><!-- .container -->
-  </div><!-- .fifty-states -->
-
+</footer>
 
 
 

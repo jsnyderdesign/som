@@ -903,8 +903,7 @@ p {
 .about {
   background: #c2d4d4 url("../images/SpoonGraphics-Topographic-Map-5.jpg");
   background-repeat: repeat;
-  position: relative;
-  margin: 50px 0 0 0; }
+  position: relative; }
   .about .container {
     height: 100%;
     padding: 30px 0; }
@@ -929,5 +928,34 @@ p {
     bottom: 0; }
 
 /**** FIFTY STATES MAP ****/
+.fifty-states {
+  margin: 50px 0 0 0;
+  padding: 75px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f58728+0,f37438+100 */
+  background: #f58728;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #f58728 0%, #f37438 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #f58728 0%, #f37438 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #f58728 0%, #f37438 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f58728', endColorstr='#f37438',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+  .fifty-states h4, .fifty-states p {
+    text-align: center;
+    color: #fff; }
+  .fifty-states #world-map {
+    width: 100%;
+    height: 400px;
+    padding: 30px 0; }
+
+/**** FOOTER STYLING ****/
+footer {
+  background: #000;
+  color: #fff;
+  padding: 15px 0 0 0; }
+  footer p {
+    font-size: .85em; }
 
 /*# sourceMappingURL=style.css.map */
